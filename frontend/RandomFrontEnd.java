@@ -1,4 +1,4 @@
-package frontend.images;
+package frontend;
 
 import backend.*;
 
