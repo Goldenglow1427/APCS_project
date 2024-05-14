@@ -5,6 +5,21 @@ import java.util.ArrayList;
 public abstract class BackEnd
 {
     private boolean state = false;
+
+    protected boolean getState()
+    {
+        return this.state;
+    }
+
+    protected void updateState(boolean newState)
+    {
+        this.state = newState;
+    }
+
+    protected void setUpdated()
+    {
+        this.state = true;
+    }
     
     // If the information stored is updated.
     public boolean waitNewInfo()

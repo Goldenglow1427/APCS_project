@@ -2,11 +2,25 @@ package frontend;
 
 import backend.*;
 
-public class RandomFrontEnd
+public class RandomFrontEnd extends FrontEnd
 {
-    public static void main(String args[])
+    public RandomFrontEnd(BackEnd be)
     {
-        BackEnd myBE = new RandomBackEnd();
+        super(be);
+    }
+    
+    public void initiate()
+    {
+        System.out.println(2);
+    }
+
+    public void quit()
+    {
+        System.out.println("Ended");
+    }
+
+    public void show()
+    {
         for(int i=1; i<=10; i++)
         {
             while(!myBE.waitNewInfo());

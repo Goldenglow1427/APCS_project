@@ -1,14 +1,13 @@
-import backend.BackEnd;
 import backend.RandomBackEnd;
+import frontend.FrontEnd;
+import frontend.RandomFrontEnd;
 
 public class Main
 {
     public static void main(String args[])
     {
-        BackEnd myBackEnd = new RandomBackEnd();
-
-        System.out.println(myBackEnd.getPixelArray()[0]);
-        myBackEnd.moveTime(20);
-        System.out.println(myBackEnd.getPixelArray()[0]);
+        FrontEnd stage = new RandomFrontEnd(new RandomBackEnd());
+        
+        stage.show();
     }
 }
