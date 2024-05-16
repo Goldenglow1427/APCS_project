@@ -19,11 +19,11 @@ public class RealBackEnd extends BackEnd{
                     i--;
                 }
             }
-            if(counterObstacles % 10 ==0){
+            if(counterObstacles % 8 ==0){
                 obstacles.add(startDistance);
             }
-            if(counterObstacles% 20 == 2){
-                counterObstacles += -2 + (int) (Math.random() * 5); //slight randomness in time between new obstacles
+            if(counterObstacles% 16 == 3){
+                counterObstacles += -3 + (int) (Math.random() * 5); //slight randomness in time between new obstacles
             }
             counterObstacles++;
         } catch (Exception e) {
