@@ -4,12 +4,17 @@ import backend.BackEnd;
 
 public abstract class FrontEnd
 {
-    protected BackEnd myBE;
+    private BackEnd myBE;
 
     public FrontEnd(){}
     public FrontEnd(BackEnd backend)
     {
         this.myBE = backend;
+    }
+
+    protected BackEnd backend()
+    {
+        return this.myBE;
     }
 
     public abstract void initiate();

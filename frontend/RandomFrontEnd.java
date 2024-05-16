@@ -23,8 +23,8 @@ public class RandomFrontEnd extends FrontEnd
     {
         for(int i=1; i<=10; i++)
         {
-            while(!myBE.waitNewInfo());
-            System.out.println(myBE.getNewArray());
+            while(!backend().waitNewInfo());
+            System.out.println(backend().getNewArray());
         }
     }
 }
