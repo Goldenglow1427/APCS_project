@@ -21,7 +21,7 @@ public class RandomFrontEnd extends FrontEnd
 
     public void show()
     {
-        for(int i=1; i<=10; i++)
+        for(int i=1; i<=10000; i++)
         {
             while(!myBE.waitNewInfo());
             System.out.println(myBE.getNewArray());
